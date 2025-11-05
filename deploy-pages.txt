@@ -1,0 +1,27 @@
+Run first: npx webpack
+-- for dist directory
+
+To deploy to github pages, run: 
+
+1. git branch gh-pages
+
+2. git add . && git commit -m ''
+
+3. git status
+  -- check file status
+
+4. git checkout gh-pages && git merge main --no-edit
+
+5. git add dist -f && git commit -m 'Deployment Commit'
+
+6. git subtree push --prefix dist origin gh-pages
+
+7. git checkout main
+
+####################
+On Github:
+
+1. Go to settings, then pages
+
+2. Change branch main to branch gh-pages
+
