@@ -1,2 +1,155 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Transducer-Extended-Medium';
+  src: url("./fonts/TransducerExtendedMedium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Transducer-Extended-Bold';
+  src: url("./fonts/TransducerExtendedBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal
+}
+
+@layer components {
+  .content {
+    @apply flex flex-col;
+  }
+
+  .header {
+    @apply fixed top-0 left-0 w-full bg-white z-50;
+  }
+
+  .header-inner {
+    @apply max-w-[1400px] mx-auto w-full flex flex-row justify-between items-start
+      px-13 pt-3.5;
+  }
+
+  .header-buttons {
+    @apply flex flex-row gap-5 pt-6.5 pr-3;
+  }
+
+  .header-link {
+    @apply relative cursor-pointer inline-block leading-none text-[var(--cppgreen)] text-[14px] 
+      self-baseline pb-[2px] after:content-[''] after:absolute after:left-0 after:bottom-0
+      after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300
+      hover:after:w-full translate-y-1;
+  
+      
+    font-family: 'Transducer-Extended-Bold';
+    font-weight: 900;
+  }
+    
+  .header-link-img {
+    @apply cursor-pointer;
+  }
+
+  .cpp-nav-logo {
+    @apply h-[66px] w-[300px] cursor-pointer;
+  }
+
+  .footer {
+    @apply w-full h-1/12 overflow-hidden;
+  }
+
+  .footer-wrap {
+    @apply w-full h-full bg-[var(--cppgreen)] flex flex-col justify-around;
+  }
+
+  .footer-container {
+    @apply max-w-[1400px] mx-auto w-full flex flex-col px-13 pt-10;
+  }
+
+  .footer-content {
+    @apply flex flex-col justify-between pt-10;
+  }
+
+  .footer-links {
+    @apply bg-[var(--cppgreen)] flex flex-row justify-between;
+  }
+
+
+  .footer-buttons {
+    @apply flex flex-row justify-end gap-[20px] w-[50%];
+  }
+
+  .footer-button {
+    @apply hover:text-[var(--cppgreen)] font-bold uppercase text-white px-10 max-w-35 h-[65%]
+      flex items-center justify-center border-2 border-transparent [border-image-slice:1] 
+      [border-image-source:linear-gradient(to_left,#ffb81c,#a4d65e)] bg-transparent 
+      hover:bg-gradient-to-r hover:from-[#a4d65e] hover:to-[#ffb81c] text-center
+      transition-all duration-300 ease-in-out hover:underline hover:underline-offset-1 
+      cursor-pointer text-[12px] leading-none;
+
+    font-family: 'Transducer-Extended-Bold';
+    font-weight: 900;
+  }
+
+  .footer-text {
+    @apply flex flex-row;
+
+    font-family: Arial;
+  }
+
+  .socials-links {
+    @apply flex flex-row w-full justify-end gap-6 pr-3;
+  }
+
+  .social-link {
+    @apply cursor-pointer hover:outline-white hover:outline-2 rounded-2xl;
+  }
+
+  .footer-bottom-link {
+    @apply text-[13px] hover:underline cursor-pointer;
+  }
+
+  .page-heading {
+    @apply shadow-[0_3px_6px_-4px_rgba(0,0,0,0.1)] shadow-gray-300 text-[2.5em] 
+      px-[15px] pl-[30px] pt-24.5 pb-1 text-[var(--heading-font-color)];
+
+    font-family: Arial;
+  }
+
+  .cpp-nav {
+    @apply flex flex-col items-start p-4 pl-12 gap-3;
+
+    font-family: Arial;
+  }
+
+  .nav-button {
+    @apply flex py-2 pl-4 pr-2 w-[225px] rounded-sm hover:bg-gray-200 hover:font-bold cursor-pointer;
+  }
+
+  .nav-button .nav-closed {
+    @apply font-bold pl-2 -translate-y-1.5;
+  }
+
+  .selected {
+    @apply text-white bg-[var(--heading-font-color)] hover:bg-[var(--heading-font-color)] 
+      cursor-default hover:font-normal;
+  }
+
+  .home-welcome-bg {
+    @apply bg-[var(--cppgreen)] ml-40 rounded-[25px] mt-8;
+  }
+
+  .home-welcome-title {
+    @apply text-center text-2xl mt-4 pt-2 text-[var(--cppgold)] font-bold;
+  }
+
+  .home-welcome-message {
+    @apply pt-2 px-10 text-white pb-5;
+  }
+}
+
+@layer base {
+  :root {
+    --cppgreen: #005030;
+    --cppgold: #ffb400;
+    --greenhover: #007530;
+    --heading-font-color: #01426a;
+  }
+}
