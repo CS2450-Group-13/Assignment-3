@@ -3,10 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title Here</title>
+    <title>Computer Science</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <div id="test" class="text-3xl font-extrabold underline">Hello There, if this is styled then tailwind build has worked</div>
+  <div class="content">
+    <div class="header">
+      <div class="header-inner">
+        <a href="https://cpp.edu">
+          <img class="cpp-nav-logo" src="../assets/cpp-logo.png" alt="cpp logo">
+        </a>
+        <div class="header-buttons">  
+          <a class="header-link" href="https://cpp.edu/apply">APPLY</a>
+          <a class="header-link" href="https://outreach/tours.shtml">VISIT</a>
+          <a class="header-link" href="https://engage.cpp.edu/register/ask_us_a_question">INFO</a>
+          <a class="header-link" href="https://www.cpp.edu/giving/">GIVE</a>
+          <a class="header-link" href="https://my.cpp.edu/">MYCPP</a>
+          <a class="header-link-img">
+            <img src="../assets/search-icon.svg" alt="search-icon">
+          </a>
+          <a class="header-link-img">
+            <img src="../assets/menu-icon.svg" alt="menu-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pages go here -->
+    <div id="home-page" class="h-400 w-full">
+      <div class="page-heading">Computer Science</div>
+      <div class="page-content flex flex-col pt-2 mr-60">
+        <div class="flex flex-row">
+          <div class="cpp-nav">
+            <button id="home-button" class="nav-button selected">Home</button>
+            <button class="nav-button">About the Department <div class="nav-closed">⌄</div> </button>
+            <button class="nav-button">Faculty & Research <span class="nav-closed">⌄</span> </button>
+            <button class="nav-button">Undergraduate Studies <span class="nav-closed">⌄</span> </button>
+            <button class="nav-button">Graduate Studies <span class="nav-closed">⌄</span> </button>
+            <button 
+              id="student-resources-button" 
+              class="nav-button"
+            >
+              Student Resources <span class="nav-closed">⌄</span> 
+            </button>
+            <div>
+              <!-- Here goes the mini-nav under student resources -->
+            </div>
+            <button class="nav-button">Community & Outreach <span class="nav-closed">⌄</span> </button>
+          </div>
+          <div class="home-top-content">
+            <div class="home-welcome-bg">
+              <div class="home-welcome-title">Welcome!</div>
+              <div class="home-welcome-message"> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                The Computer Science Department conducts both an undergraduate and a graduate program in 
+                Computer Science. The undergraduate program offers a dynamic curriculum with a strong emphasis 
+                on software design. Students navigate the intricacies of their project-oriented coursework as 
+                they learn to design, build, and implement computer software from the ground up. 
+                <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                The program provides an extensive background in computer programming languages, computer architecture, and the 
+                design and application of computer algorithms. Progress through this diverse curriculum leads to 
+                concentrated instruction on topics such as Cyber Security and Operations, cloud computing, mobile computing, 
+                software entrepreneurship, wireless communication networks, machine learning, data mining, high performance 
+                computing, robotics, human computer interaction, 3D game programming, and data science. 
+                <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Please see the elective courses we offer here based on different career interests.
+                The department's Bachelor of Science program has been fully 
+                accredited by the Computing Accreditation Commission of ABET since 1994. For 
+                further information visit the Program Accreditation & Assessment page.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img class="w-full scale-113 overflow-hidden" src="../assets/green-rip.svg" alt="cpp-footer-rip">
+      <div class="footer-wrap">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-links w-full m-0 p-0">
+              <a href="https://cpp.edu">
+                <img class="w-[80%] max-w-[175px] cursor-pointer -translate-y-3 pl-3" src="../assets/cpp-primary.png" alt="cpp-logo-gold">
+              </a>
+              <div class="footer-buttons pr-3">
+                <a class="footer-button" href="https://cpp.edu/apply">APPLY</a>
+                <a class="footer-button" href="https://maps.cpp.edu">MAPS</a>
+                <a class="footer-button" href="https://www.cpp.edu/outreach/tours.shtml">VISIT</a>
+                <a class="footer-button" href="https://www.cpp.edu/contact.shtml">CONTACT US</a>
+              </div>
+            </div>
+            <div class="socials-links">
+              <a href="https://www.instagram.com/calpolypomona/">
+                <img class="social-link" src="../assets/insta.svg" alt="instagram">
+              </a>
+              <a href="https://www.linkedin.com/school/cal-poly-pomona/">
+                <img class="social-link" src="../assets/li.svg" alt="instagram">
+              </a>
+              <a href="https://www.youtube.com/user/calpolypomona">
+                <img class="social-link" src="../assets/yt.svg" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/calpolypomona">
+                <img class="social-link" src="../assets/fb.svg" alt="instagram">
+              </a>
+              <a href="https://twitter.com/calpolypomona">
+                <img class="social-link" src="../assets/x.svg" alt="instagram">
+              </a>
+            </div>
+            <div class="h-[1px] bg-gradient-to-r from-[#ffb81c] to-[#a4d65e] my-8"></div>
+            <div class="footer-text">
+              <div class="text-white pl-3 text-[13px] font-semibold flex-shrink-0">
+                Copyright ©2025 California State Polytechnic University, Pomona. All Rights Reserved
+                <br> A campus of <span><a class="cursor-pointer hover:underline" href="https://www.calstate.edu/">The California State University.</a></span>
+              </div>
+              <div class="w-full flex justify-end max-w-[1400px] gap-7 text-white items-center pr-3 pt-0">
+                <a class="footer-bottom-link" href="https://www.cpp.edu/website-feedback.shtml">Feedback</a>
+                <a class="footer-bottom-link" href="https://www.cpp.edu/privacy.shtml">Privacy</a>
+                <a class="footer-bottom-link" href="https://www.cpp.edu/accessibility.shtml">Accessibility</a>
+                <a class="footer-bottom-link" href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[8px] w-[92%] place-self-center bg-gradient-to-r from-[#ffb81c] to-[#a4d65e] my-7"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
