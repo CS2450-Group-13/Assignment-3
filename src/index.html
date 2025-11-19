@@ -30,13 +30,18 @@
       </div>
     </div>
 
-    <!-- Pages go here -->
-    <div id="home-page" class="h-400 w-full">
+    <div id="content-page" class="w-full">
       <div class="page-heading">Computer Science</div>
-      <div class="page-content flex flex-col pt-2 mr-60">
-        <div class="flex flex-row">
+      <div class="page-content pt-2 mr-60 flex">
+        <div class="w-[27%]">
           <div class="cpp-nav">
-            <button id="home-button" class="nav-button selected">Home</button>
+            <button 
+              id="home-button" 
+              class="nav-button selected nvb"
+              data-page="home-page"
+            >
+              Home
+            </button>
             <button class="nav-button">About the Department <div class="nav-closed">⌄</div> </button>
             <button class="nav-button">Faculty & Research <span class="nav-closed">⌄</span> </button>
             <button class="nav-button">Undergraduate Studies <span class="nav-closed">⌄</span> </button>
@@ -49,9 +54,26 @@
             </button>
             <div>
               <!-- Here goes the mini-nav under student resources -->
+                <div id="student-resources-nav" class="hidden">
+                  <button class="mini-nav-button nvb">Scholarships</button>
+                  <button class="mini-nav-button nvb">Research & Employment Opportunities</button>
+                  <button class="mini-nav-button nvb">Student Clubs (CSSA @ CPP)</button>
+                  <button class="mini-nav-button nvb">CS Internship</button>
+                  <button 
+                    id="student-labs-button"
+                    class="mini-nav-button nvb"
+                    data-page="student-labs-page"
+                  >
+                    Labs (Instructional & Research)
+                  </button>
+                  <button class="mini-nav-button nvb">Student Advising Center</button>
+                </div>
             </div>
-            <button class="nav-button">Community & Outreach <span class="nav-closed">⌄</span> </button>
+            <button class="nav-button nvb">Community & Outreach <span class="nav-closed">⌄</span> </button>
           </div>
+        </div>
+        <!-- pages go here -->
+        <div id="home-page" class="page flex-1">
           <div class="home-top-content">
             <div class="home-welcome-bg">
               <div class="home-welcome-title">Welcome!</div>
@@ -73,6 +95,15 @@
                 accredited by the Computing Accreditation Commission of ABET since 1994. For 
                 further information visit the Program Accreditation & Assessment page.
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="student-labs-page" class="page flex-1 hidden">
+          <div>
+            <div class="lab-content-header">Lab Use and Hours</div>
+            <div>
+              <div>...</div>
             </div>
           </div>
         </div>

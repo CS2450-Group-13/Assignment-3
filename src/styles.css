@@ -114,22 +114,29 @@
   }
 
   .cpp-nav {
-    @apply flex flex-col items-start p-4 pl-12 gap-3;
+    @apply flex flex-col items-start p-4 pl-12 text-lg;
 
     font-family: Arial;
   }
 
   .nav-button {
-    @apply flex py-2 pl-4 pr-2 w-[225px] rounded-sm hover:bg-gray-200 hover:font-bold cursor-pointer;
+    @apply flex py-2.5 pl-4 pr-3 w-[260px] rounded-sm hover:bg-gray-200 hover:font-bold cursor-pointer;
   }
 
   .nav-button .nav-closed {
     @apply font-bold pl-2 -translate-y-1.5;
   }
 
+  .nav-open {
+    @apply font-bold pl-2 translate-y-1;
+  }
+  
   .selected {
-    @apply text-white bg-[var(--heading-font-color)] hover:bg-[var(--heading-font-color)] 
-      cursor-default hover:font-normal;
+    @apply text-white bg-[var(--heading-font-color)] hover:bg-[var(--heading-font-color)];
+  }
+
+  #home-button.selected {
+    @apply cursor-default hover:font-normal;
   }
 
   .home-welcome-bg {
@@ -143,6 +150,14 @@
   .home-welcome-message {
     @apply pt-2 px-10 text-white pb-5;
   }
+
+  #student-resources-nav {
+    @apply flex flex-col justify-start text-sm pb-1 gap-2;
+  }
+
+  .mini-nav-button {
+    @apply cursor-pointer hover:bg-gray-200 hover:font-bold rounded-sm text-left pl-6 py-0.5;
+  }
 }
 
 @layer base {
@@ -151,5 +166,7 @@
     --cppgold: #ffb400;
     --greenhover: #007530;
     --heading-font-color: #01426a;
+
+    font-family: Arial;
   }
 }
