@@ -32,8 +32,8 @@
 
     <div id="content-page" class="w-full">
       <div class="page-heading">Computer Science</div>
-      <div class="page-content pt-2 mr-60 flex">
-        <div class="w-[27%]">
+      <div class="page-content pt-2">
+        <div class="w-[27%] float-left mr-6">
           <div class="cpp-nav">
             <button 
               id="home-button" 
@@ -54,7 +54,7 @@
             </button>
             <div>
               <!-- Here goes the mini-nav under student resources -->
-                <div id="student-resources-nav" class="hidden">
+                <div id="student-resources-nav" class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
                   <button class="mini-nav-button nvb">Scholarships</button>
                   <button class="mini-nav-button nvb">Research & Employment Opportunities</button>
                   <button class="mini-nav-button nvb">Student Clubs (CSSA @ CPP)</button>
@@ -73,8 +73,8 @@
           </div>
         </div>
         <!-- pages go here -->
-        <div id="home-page" class="page flex-1">
-          <div class="home-top-content">
+        <div id="home-page" class="page">
+          <div class="home-top-content mx-auto max-w-[1200px] ml-70">
             <div class="home-welcome-bg">
               <div class="home-welcome-title">Welcome!</div>
               <div class="home-welcome-message"> 
@@ -95,8 +95,124 @@
                 accredited by the Computing Accreditation Commission of ABET since 1994. For 
                 further information visit the Program Accreditation & Assessment page.
               </div>
+
+              <section class="yellow-container">
+                <div class="flex flex-col items-center justify-center">
+                  <h2 class="yellow-container-h2">Contact Information:</h2>
+                  <p>Building 3 - Room 1645</p>
+                  <p>Email: <a href="mailto:cs@cpp.edu" class="underline">cs@cpp.edu</a></p>
+                  <p>Phone: 909-869-3440</p>
+                  <p>Fax: 909-869-4733</p>
+                </div>
+                <div class="yellow-socials flex flex-row gap-4">
+                  <a href="https://www.facebook.com/Cal-Poly-Pomona-Computer-Science-Department-106370911033355/">
+                    <img class="yellow-social-icon" src="../assets/fb-icon.png">
+                  </a>
+                  <a href="https://www.instagram.com/cppcomputersci/">
+                    <img class="yellow-social-icon" src="../assets/insta-icon.png">
+                  </a>
+                  <a href="https://twitter.com/CPPComputerSci">
+                    <img class="yellow-social-icon" src="../assets/x-icon.png">
+                  </a>
+                  <a href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fgroups%2F4421525%2F&trk=login_reg_redirect">
+                    <img class="yellow-social-icon" src="../assets/linked-in-icon.png">
+                  </a>
+                </div>
+              </section>
+
             </div>
           </div>
+
+          <section class="mt-20 mb-20">
+            <h2 class="news-section-h2">Programs</h2>
+            <div class="program-links w-full flex flex-row items-center justify-center gap-25">
+              <div class="flex flex-col items-center justify-center">
+                <a href="https://www.cpp.edu/sci/computer-science/undergraduate-program/index.shtml">
+                  <img class="program-icon translate-y-5 translate-x-9" src="../assets/undergrad.png">
+                </a>
+                <a href="https://www.cpp.edu/sci/computer-science/undergraduate-program/index.shtml">
+                  <div class="program-name">Undergraduate</div>
+                </a>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <a href="https://www.cpp.edu/sci/computer-science/current-graduate-students/index.shtml">
+                  <img class="program-icon" src="../assets/graduate.png">
+                </a>
+                <a href="https://www.cpp.edu/sci/computer-science/current-graduate-students/index.shtml">
+                  <div class="program-name">Graduate</div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="news-section">
+            <h2 class="news-section-h2">News & Announcements</h2>
+
+            <div class="news-grid">
+
+            <!-- Left Column -->
+            <div class="news-text">
+              <p><span class="news-text2">T</span>he CS department invites applications for two tenure-track faculty positions at the rank of Assistant Professor to start in Fall 2024. Candidates in all Major Computer Science areas will be considered and are thus encouraged to apply. 
+                <a href="#" class="news-text3">Please see the complete ad here for more details.</a>
+              </p>
+
+              <p><span class="news-text2">T</span>he Data Science Center is established to train students in competencies and skills in data science. We service both CS and non-CS majors. Please visit the 
+                <a href="#" class="news-text3">data science hub</a> for more information.
+              </p>
+
+              <p><span class="news-text2">I</span>nterested in the state of the art in Computer Science? Check out the 
+                <a href="#" class="news-text3">Computer Science Seminar Series.</a>
+              </p>
+
+              <p><span class="news-text2">G</span>oogle explore the <a href="#" class="news-text3"> CSR program</a> on Data Science and Artificial Intelligence at Cal Poly Pomona for AY 2022–23.</p>
+              <p><span class="news-text2">L</span>ecturers - The Computer Science Department invites applications for lecturers. An advanced degree in Computer Science, or a related field, is desirable. Please download the 
+              <a href="#" class="news-text3">Lecturer Information Sheet (DOCX)</a> for more information.
+              </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="news-right-column">
+              <p>Download a digital copy of our 
+                <a href="#" class="news-text3">CS brochure (PDF)</a>.
+              </p>
+              <p class="font-semibold">Coming up in Fall 2024:</p>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>Minor in cybersecurity that serves both CS and non-CS majors.</li>
+                  <li>
+                  <a href="#" class="news-text3">Global Certificate in Computer Science</a> – a bridge program to the Master in Computer Science.
+                  </li>
+                  <li>
+                    Coming Soon: <a href="#" class="news-text3">Data Science and Artificial Intelligence Certificate (PDF)</a> for Non-CS Majors.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bottom Bubbles Section -->
+          <section class="bottom-bubbles-section">
+            <div class="bottom-bubbles">
+              <h3 
+                id="student-labs-bottom-button"
+                class="bottom-bubbles-section-h3"
+                data-page="student-labs-page"
+              >
+                Laboratory Information
+              </h3>
+            </div>
+
+            <div class="bottom-bubbles">
+              <h3 
+                id="student-resources-bottom-button"
+                class="bottom-bubbles-section-h3"
+              >
+                Student <br> Resources
+              </h3>
+            </div>
+
+            <div class="bottom-bubbles">
+              <h3 class="bottom-bubbles-section-h3">Community & Outreach</h3>
+            </div>
         </div>
 
         <div id="student-labs-page" class="page flex-1 hidden">
@@ -111,7 +227,7 @@
     </div>
 
     <div class="footer">
-      <img class="w-full scale-113 overflow-hidden" src="../assets/green-rip.svg" alt="cpp-footer-rip">
+      <img class="w-full scale-113 overflow-hidden mt-20" src="../assets/green-rip.svg" alt="cpp-footer-rip">
       <div class="footer-wrap">
         <div class="footer-container">
           <div class="footer-content">
