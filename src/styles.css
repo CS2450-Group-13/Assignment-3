@@ -114,7 +114,7 @@
   }
 
   .cpp-nav {
-    @apply flex flex-col items-start p-4 pl-12 text-lg;
+    @apply flex flex-col items-start p-4 pl-12 text-lg mb-0;
 
     font-family: Arial;
   }
@@ -161,7 +161,7 @@
 
   .yellow-container {
     @apply bg-[var(--cppgold)] text-green-900 rounded-[24px] mt-5 py-8 px-11 
-      flex flex-row text-left justify-around items-center shadow-lg relative z-10;
+      flex flex-row text-left font-bold justify-around items-center shadow-lg relative z-10;
   }
 
   .yellow-container-h2 {
@@ -229,6 +229,44 @@
 
   .program-name {
     @apply text-2xl text-[var(--cppgreen)] font-bold mt-3 cursor-pointer hover:underline;
+  }
+
+  .lab-content-header {
+    @apply font-bold text-2xl mb-1;
+  }
+
+  .lab-use-bg {
+    @apply bg-[var(--heading-font-color)] text-left text-white flex flex-row p-4 rounded-xl shadow-md;
+  }
+
+  .lab-subheading {
+    @apply font-bold text-xl mb-1.5;
+  }
+
+  .instructional-lab-bg {
+    @apply bg-gray-300 text-left flex flex-row p-4 rounded-xl shadow-md;
+  }
+
+  .research-lab-button {
+    @apply text-xl font-bold hover:scale-110 transition-transform cursor-pointer border 
+      border-[var(--heading-font-color)] hover:bg-[var(--heading-font-color)] ease-in-out duration-250
+      hover:text-white hover:font-extrabold rounded-md py-2;
+  }
+
+  .lab-button-selected {
+    @apply bg-[var(--heading-font-color)] text-white text-xl font-extrabold rounded-md py-2;
+  }
+
+  .labsection {
+    @apply py-3 px-3;
+  }
+
+  .back-to-top-wrapper {
+    @apply flex justify-center items-center mt-15;
+  }
+
+  .back-to-top-button {
+    @apply text-[50px] font-bold hover:scale-125 transition-transform duration-200 ease-in-out cursor-pointer;
   }
 }
 

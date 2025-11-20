@@ -3,7 +3,6 @@ import "./styles.css";
 const studentResourcesButton = document.getElementById('student-resources-button');
 const studentResourcesNav = document.getElementById('student-resources-nav');
 
-
 const toggleStudentResourcesTab = () => {
   if (studentResourcesNav.classList.contains('max-h-0')) {
     studentResourcesNav.classList.remove('max-h-0');
@@ -66,4 +65,34 @@ greenStudentLabsButton.addEventListener('click', () => {
 const greenStudentResourcesButton = document.getElementById('student-resources-bottom-button');
 greenStudentResourcesButton.addEventListener('click', () => {
   toggleStudentResourcesTab();
+});
+
+const researchLabButtons = document.querySelectorAll('.research-lab-button');
+const researchLabSections = document.querySelectorAll('.labsection');
+researchLabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const target = button.dataset.labsection;
+
+    if (!target) return;
+
+    researchLabSections.forEach(s => s.classList.add('hidden'));
+    document.getElementById(target).classList.remove('hidden');
+
+    researchLabButtons.forEach(b => {
+      b.classList.remove('lab-button-selected');
+      b.classList.add('research-lab-button');
+    });
+
+    button.classList.add('lab-button-selected');
+    button.classList.remove('research-lab-button');
+  });
+});
+
+document.querySelectorAll('.back-to-top-button').forEach(b => {
+  b.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });
