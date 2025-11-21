@@ -254,11 +254,11 @@
   }
 
   .lab-button-selected {
-    @apply bg-[var(--heading-font-color)] text-white text-xl font-extrabold rounded-md py-2;
+    @apply bg-[var(--heading-font-color)] text-white text-xl font-extrabold rounded-md py-2 cursor-pointer;
   }
 
   .labsection {
-    @apply py-3 px-3;
+    @apply px-3 overflow-hidden transition-all duration-300 ease-out;
   }
 
   .back-to-top-wrapper {
